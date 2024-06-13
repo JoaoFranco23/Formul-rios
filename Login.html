@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <fieldset class="border">
+        <form action="#" accept-charset="UTF-8" accept-patch="#"> <!--Está tag será responsavel por indicar o tipo de midia o servidor está apto a entender-->
+            <div class="E-mail" id="E-mail"><!--Ao inserir as tags input, dentro da tag possui um check de  validação, verificando se os caracteres estão corretos-->
+                <span class="material-symbols-outlined">mail</span>
+                <input type="email" name="email" [(ngModel)]="email" placeholder="NomeEmail@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="45" checked="email" aria-activedescendant="email">
+            </div>
+            <br>
+            <div class="senha" id="senha">
+                <span class="material-symbols-outlined">password</span>
+                <input type="senha" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="9" aria-activedescendant="senha" checked="senha">
+            </div>
+            <br>
+            <div class="polica-group" id="polica-group">
+                <input type="checkbox" required name="Termos de Consentimento" class="check" id="check-terms" value="">
+                <label class="check-label" type="check-terms" >
+                    Tenho ciência e concordo que meus dados aqui informados poderão ser utilizados pela Empresa de acordo com os termos apresentados no <a target="_blank" href="politica-de-privacidade">Política de Privacidade.</a> 
+                </label>
+                </div>
+            </div>
+            <br>
+            <div class="salvar" id="salvar">
+                
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
