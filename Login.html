@@ -20,6 +20,18 @@
                 <input type="senha" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="9" aria-activedescendant="senha" checked="senha">
             </div>
             <br>
+            <section class="cadastro" id="cadastro">
+                <div class="cadastro" id="cadastro">
+                    <a href="#">CADASTRAR-SE</a>
+                </div>
+            </section>
+            <br>
+            <section class="redefinir-senha" id="senha">
+                <div class="redefinir-senha" id="senha">
+                    <a href="#">RECUPERAR SUA SENHA!</a>
+                </div>
+            </section>
+            <br>
             <div class="polica-group" id="polica-group">
                 <input type="checkbox" required name="Termos de Consentimento" class="check" id="check-terms" value="">
                 <label class="check-label" type="check-terms" >
@@ -33,6 +45,13 @@
                 <label class="check-label" type="check-terms">
                     Deseja Salvar Sua Conta
                 </label>
+            </div>
+            <br>
+            <div class="btn-enviar" id="btn-enviar">
+                <button type="btn-envia" id="btn_envia" [<div [ngSwitch]="conditionExpression">
+                    <div *ngSwitchCase="expression">output</div>
+                    <div *ngSwitchDefault>output2</div>
+                </div>] 
             </div>
         </form>
     </fieldset>
