@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Login.css">
 </head>
 <body>
     <fieldset class="border">
@@ -17,18 +18,20 @@
             <br>
             <div class="senha" id="senha">
                 <span class="material-symbols-outlined">password</span>
-                <input type="senha" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="9" aria-activedescendant="senha" checked="senha">
+                <input type="senha" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="19" aria-activedescendant="senha" checked="senha">
             </div>
             <br>
             <section class="cadastro" id="cadastro">
                 <div class="cadastro" id="cadastro">
-                    <a href="#">CADASTRAR-SE</a>
+                    <a href="#" target="_blank" style="text-decoration: none;">CADASTRAR-SE</a>
                 </div>
             </section>
             <br>
             <section class="redefinir-senha" id="senha">
                 <div class="redefinir-senha" id="senha">
-                    <a href="#">RECUPERAR SUA SENHA!</a>
+                    <i>
+                        <a href="#" target="_blank" style="text-decoration: none;">RECUPERAR SUA SENHA!</a>
+                    </i>
                 </div>
             </section>
             <br>
@@ -48,10 +51,11 @@
             </div>
             <br>
             <div class="btn-enviar" id="btn-enviar">
-                <button type="btn-envia" id="btn_envia" [<div [ngSwitch]="conditionExpression">
-                    <div *ngSwitchCase="expression">output</div>
-                    <div *ngSwitchDefault>output2</div>
-                </div>] 
+                <button type="btn-envia" id="btn_envia" [(ngSwitch)]="btn-envia">
+                    <div *ngSwitchCase="expression">ENTRAR</div>
+                    <div *ngSwitchDefault></div>
+                </div>
+                </button> 
             </div>
         </form>
     </fieldset>
