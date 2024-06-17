@@ -1,8 +1,28 @@
+/*Borda centralizada ao meio*/
 .border{
-    display: flex;
-    width: 86%;
+    display: block;
+    width: 700px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 70px;
     border: 1px solid black;
     border-radius: 8px;
+    background-repeat: no-repeat;
+    background-image: url("Fogueira.gif"); /*inseri a imagem de fundo*/
+}
+/*aumentar a  largura da imagem de fundo*/
+.border{
+    background-position: 100%;
+    background-size: cover; /*redimensiona a imagem de fundo para que cubra todo o espaço do fundo do elemento*/
+    top: 0;
+    z-index: 0;
+    
+}
+/*alterando a cor do simbolo inserido*/
+.material-symbols-outlined{
+    color: white;
+}
+
+.email{
+    display: block;
+    width: 100px;
 }
