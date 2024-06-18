@@ -13,12 +13,12 @@
         <form action="#" accept-charset="UTF-8" accept-patch="#"> <!--Está tag será responsavel por indicar o tipo de midia o servidor está apto a entender-->
             <div class="E-mail" id="E-mail"><!--Ao inserir as tags input, dentro da tag possui um check de  validação, verificando se os caracteres estão corretos-->
                 <span class="material-symbols-outlined">mail</span>
-                <input type="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="18" checked="email" aria-activedescendant="email">
+                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="18" checked="email" aria-activedescendant="email">
             </div>
             <br>
             <div class="senha" id="senha">
                 <span class="material-symbols-outlined">password</span>
-                <input type="senha" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="19" aria-activedescendant="senha" checked="senha">
+                <input type="senha" class="senha" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="19" aria-activedescendant="senha" checked="senha">
             </div>
             <br>
             <section class="cadastro" id="cadastro">
@@ -37,7 +37,7 @@
             <br>
             <div class="polica-group" id="polica-group">
                 <input type="checkbox" required name="Termos de Consentimento" class="check" id="check-terms" value="">
-                <label class="check-label" type="check-terms" >
+                <label class="check-label" type="check-terms" style="color: white;">
                     Tenho ciência e concordo que meus dados seja utilizados pela empresa de acordo com os termos apresentados <a target="_blank" href="politica-de-privacidade">Política de Privacidade.</a> 
                 </label>
                 </div>
@@ -46,7 +46,7 @@
             <div class="salvar" id="salvar">
                 <input type="checkbox" [routerLink]="['routePath', routeParameterValue]"
                 routerLinkActive="router-link-active">
-                <label class="check-label" type="check-terms">
+                <label class="check-label" type="check-terms" style="color: white;">
                     Deseja Salvar Sua Conta
                 </label>
             </div>
