@@ -22,7 +22,17 @@
     color: white;
 }
 
-.email{
-    display: block;
-    width: 100px;
+.E-maill,
+.material-symbols-outlined{
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+.E-maill,
+.email{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+} 
+
