@@ -35,7 +35,30 @@
     max-width: 350px;
     margin: 0 auto;
 } 
-
+/*centralizando o symbolo com o card text inserido*/
 .E-mail{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
 
+.senha,
+.material-symbols-outlined{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.senha,
+.senha-password{
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;   
+}
+
+.senha{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
 }
