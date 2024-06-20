@@ -22,17 +22,20 @@
     color: white;
 }
 
-.E-maill,
+.E-mail,
 .material-symbols-outlined{
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.E-maill,
+.E-mail,
 .email{
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
 } 
 
+.E-mail{
+
+}
