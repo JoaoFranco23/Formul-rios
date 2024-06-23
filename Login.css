@@ -62,3 +62,28 @@
     max-width: 300px;
     margin: 0 auto;
 }
+
+.cadastro{
+    display: flex;
+    position: relative;
+    margin: 0;
+    top: 0;
+    z-index: 1;
+    align-items: center; 
+    line-height: 1.1cm;
+    justify-content: center;
+    text-align: left;
+    right: 50px;
+}
+
+.cadastro a{
+    color: rgb(20, 220, 63);
+    font-size: 14px;
+}
+
+.redefinir-senha{
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
