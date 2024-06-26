@@ -95,10 +95,11 @@ h1{
     right: 50px;
 }
 
-.cadastro a{
+.cadastro > a{
     color: rgb(20, 220, 63);
     font-size: 14px;
     text-decoration: none;
+    border-bottom: 0 solid;
     transition: background 0.1s ease-in-out;
 }
 
@@ -124,6 +125,7 @@ h1{
     color: rgb(20, 220, 63);
     z-index: 1;
     text-decoration: none;
+    border-bottom: 0 solid;
     transition: background 0.1s ease-in-out;
 }
 
@@ -135,9 +137,6 @@ h1{
 }
 
 .politica-group,
-.checkbox{
-    display: -webkit-inline-flex;
-    align-items: center;
-    justify-content: center;
-    
+.checkbox > p{
+    display: ;
 }
