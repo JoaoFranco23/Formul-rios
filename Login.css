@@ -14,14 +14,33 @@
     background-position: 100%;
     background-size: cover; /*redimensiona a imagem de fundo para que cubra todo o espaço do fundo do elemento*/
     top: 0;
-    z-index: 0;
-    
+    z-index: 0;   
 }
+
 /*alterando a cor do simbolo inserido*/
 .material-symbols-outlined{
     color: white;
 }
+h1{
+   background: rgb(233, 236, 204);
+   height:30%;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-items: center;
+   font-family: "Roboto", sans-serif; 
 
+}
+.fa-toilet-paper{
+    background: url(Fogueira.gif);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+    font-size:50px;
+    font-weight: 900;
+}
 .E-mail,
 .material-symbols-outlined{
     align-items: center;
@@ -79,6 +98,8 @@
 .cadastro a{
     color: rgb(20, 220, 63);
     font-size: 14px;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out;
 }
 
 .redefinir-senha{
@@ -102,4 +123,21 @@
     font-size: 14px;
     color: rgb(20, 220, 63);
     z-index: 1;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out;
+}
+
+.politica-group{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+}
+
+.politica-group,
+.checkbox{
+    display: -webkit-inline-flex;
+    align-items: center;
+    justify-content: center;
+    
 }
