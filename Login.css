@@ -15,8 +15,17 @@
     background-size: cover; /*redimensiona a imagem de fundo para que cubra todo o espaço do fundo do elemento*/
     top: 0;
     z-index: 0;   
+    position: relative;
+    object-position: 50% 50%; 
 }
-
+.border{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    place-content: center; 
+    max-height: 100%;  
+    object-position: 50% 50%;
+}
 /*alterando a cor do simbolo inserido*/
 .material-symbols-outlined{
     color: white;
@@ -101,6 +110,7 @@ h1{
     text-decoration: none;
     border-bottom: 0 solid;
     transition: background 0.1s ease-in-out;
+    z-index: 0; 
 }
 
 .redefinir-senha{
@@ -133,10 +143,6 @@ h1{
     display: block;
     position: absolute;
     z-index: 0;
-    margin: 0;
+    margin: 0;   
 }
 
-.politica-group,
-.checkbox > p{
-    display: ;
-}
