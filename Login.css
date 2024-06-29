@@ -142,17 +142,23 @@ h1{
     transition: background 0.1s ease-in-out;
 }
 
-.check{
+.check,
+.checkbox{
     display: block;
-    position: absolute;
-    z-index: 0;
-    margin: 0;   
+    flex-direction: column;
+    position: relative;
 }
 .check,
-input[type="checkbox"],
-.check-terms{
+.check-terms > a{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+}
+.checkbox,
+.check-terms > a{
+    display: flex;
+    margin: 0;
+    top: 0;
+    z-index: 0; 
+    
 }
