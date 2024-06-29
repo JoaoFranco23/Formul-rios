@@ -143,22 +143,30 @@ h1{
 }
 
 .check,
-.checkbox{
-    display: block;
+input[type="checkbox"]{
+    display: inline-block;
     flex-direction: column;
     position: relative;
+    width: -100%;
+    top: 0;
 }
 .check,
-.check-terms > a{
-    display: flex;
+label .checkbox-terms{
+    display: block;
     justify-content: center;
     align-items: center;
+    float: left;
+    width: 100%;
 }
-.checkbox,
-.check-terms > a{
+input[type="checkbox"],
+label .checkbox-terms{
+    display: inline-block;
+    width: -70%;
+    justify-content: center;
+}
+
+label .checkbox-terms > a{
     display: flex;
-    margin: 0;
-    top: 0;
-    z-index: 0; 
+    justify-content: center;
     
 }
