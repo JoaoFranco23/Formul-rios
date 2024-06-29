@@ -34,20 +34,12 @@
                 </div>
             </section>
             <br>
-            <div class="politica-group" id="polica-group">
-                <input type="checkbox" required name="Termos de Consentimento" class="check" id="check-terms" value="">
-                <label class="checkbox-label" type="check-terms" style="color: white;">
-                    Li e concordo com<a target="_blank" href="a politica-de-privacidade" style="text-decoration: none;">Política de Privacidade.</a> 
-                </label>
-                </div>
-            </div>
-            <br>
-            <div class="salvar" id="salvar">
+            <div class="check" id="check">
                 <input type="checkbox" [routerLink]="['routePath', routeParameterValue]"
                 routerLinkActive="router-link-active">
-                <label class="check-label" type="check-terms" style="color: white;">
+                <a class="check-terms" type="check-terms" style="color: white;">
                     Deseja Salvar Sua Conta
-                </label>
+                </a>
             </div>
             <br>
             <div class="btn-enviar" id="btn-enviar">
