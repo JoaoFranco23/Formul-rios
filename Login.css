@@ -142,15 +142,13 @@ h1{
     transition: background 0.1s ease-in-out;
 }
 
-.check,
-input[type="checkbox"]{
-    display: inline-block;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-}
-
-label .checkbox-terms{
+.check{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    top: -20px;
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
 }
