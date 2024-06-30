@@ -7,6 +7,11 @@ body{
     overflow: hidden;
     width: 100%;
     height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center; /*Centraliza todos os elementos da borda*/
+    color-interpolation-filters: sRGB ;
+    filter: drop-shadow(20px 20px 30px url) (75%);
 }
 /*Borda centralizada ao meio*/
 .border{
@@ -147,8 +152,29 @@ h1{
     justify-content: center;
     align-items: center;
     margin: 0;
-    top: -20px;
+    top: -40px;
     position: relative;
     margin-top: -20px;
-    z-index: 10;
+    z-index: 9;
+    text-align: left;
+    width: 100%;
+    margin-left: -67px;
+    float: left;
+}
+
+.btn-envia{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px 46px;
+    width: 60px;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    justify-content: center;
+}
+.btn_envia button{
+    display: flex;
+    
 }
