@@ -174,7 +174,9 @@ h1{
     cursor: pointer;
     justify-content: center;
 }
-.btn_envia button{
+.btn-envia:hover{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
