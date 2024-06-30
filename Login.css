@@ -147,26 +147,10 @@ input[type="checkbox"]{
     display: inline-block;
     flex-direction: column;
     position: relative;
-    width: -100%;
-    top: 0;
-}
-.check,
-label .checkbox-terms{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    float: left;
     width: 100%;
 }
-input[type="checkbox"],
-label .checkbox-terms{
-    display: inline-block;
-    width: -70%;
-    justify-content: center;
-}
 
-label .checkbox-terms > a{
+label .checkbox-terms{
     display: flex;
-    justify-content: center;
     
 }
