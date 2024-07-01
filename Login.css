@@ -162,21 +162,10 @@ h1{
     float: left;
 }
 
+.btn, /*Aumenta a espessura do botão*/
 .btn-envia{
     display: flex;
-    border: 1px solid black;
-    padding: 10px 46px;
-    width: 60px;
-    font-size: 16px;
-    background-color: blueviolet;
-    color: black;
-    border-radius: 2px;
-    cursor: pointer;
     justify-content: center;
-}
-.btn-envia:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    font-size: 20px;
+    margin-bottom: 1px;
 }
