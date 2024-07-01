@@ -42,11 +42,10 @@
                 </label>
             </div>
             <br>
-            <div class="btn-enviar" id="btn-enviar">
-                <button type="btn-envia" id="btn_envia" [(ngSwitch)]="btn-envia">
+            <div class="btn" id="btn">
+                <button type="btn-envia" id="btn-envia" [(ngSwitch)]="btn-envia" role="button" style="width: 150px !important; cursor: pointer; padding: 9px 46px;">
                     <div *ngSwitchCase="expression">ENTRAR</div>
                     <div *ngSwitchDefault></div>
-                </div>
                 </button> 
             </div>
         </form>
