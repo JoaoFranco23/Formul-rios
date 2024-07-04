@@ -4,20 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--Nome Simbolo-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--Email-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <fieldset class="borda" id="borda">
         <h1 class="fa-toilet-paper">LOGIN</h1>
-        <form action="#" accept="viewport" novalidate>
+        <br>
+        <div class="fa-linkedin" id="fa-linkedin"><!--Cadastro Atraves das Redes Sociais-->
+            <a href="https://www.linkedin.com/login">
+                <i class="fa-linkedin">
+                    <img src="linkedin.png">
+                </i>
+            </a> 
+        </div>
+        <div class="fa-facebook" id="fa-facebook">
+            <a href="https://www.facebook.com/?locale=pt_BR">
+                <i class="fa-facebook">
+                    <img src="facebook.png">
+                </i>
+            </a>
+        </div>
+        <div class="fa-gmail" id="fa-gmail">
+            <a href="https://accounts.google.com/login">
+                <i class="fa-gmail">
+                    <img src="gmail.png" >
+                </i>
+            </a>
+        </div>
+        <div class="row"><!--Insere uma linha separando os cards-->
+            <div class="linha">
+                <hr class="hr"data-content="OU">
+            </div>
+        </div>
+        <form action="#" accept="viewport" novalidate><!--Tag para armazenar os dados no banco de dados tornando validos-->
             <div class="nome" id="nome">
                 <span class="material-symbols-outlined">badge</span>
-                <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]">
-                <mat-form-field>
-                    
-                </mat-form-field>
+                <mat-stepper [linear]="linear"><!--Tag mat, sera responsavel por -->
+                    <mat-step [stepControl ]="firstFormGroup">
+                        <form [[formGroupName]="firstFormGroup"]>
+                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]">
+                        </form>
+                    </mat-step>
+                </mat-stepper>
             </div>
         </form>
+        <br>
+        <form action="#" accept-charset="" novalidate>
+            <div class="E-mail" id="E-mail">
+                <span class="material-symbols-outlined">mail</span>
+                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="18" checked="email" aria-activedescendant="email">
+            </div>
+            <br> 
+            <div class="senha" id="senha">
+                <span class="material-symbols-outlined">password</span> 
+                
+            </div>
+        </form>
+        <br>
+        
     </fieldset>
 </body>
 </html>
