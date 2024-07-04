@@ -3,78 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--Nome Simbolo-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--Email-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--Senha-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--Mundo-->
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Login.css">
 </head>
 <body>
-    <fieldset class="borda" id="borda">
+    <fieldset class="border">
         <h1 class="fa-toilet-paper">LOGIN</h1>
-        <br>
-        <div class="fa-linkedin" id="fa-linkedin"><!--Cadastro Atraves das Redes Sociais-->
-            <a href="https://www.linkedin.com/login">
-                <i class="fa-linkedin">
-                    <img src="linkedin.png">
-                </i>
-            </a> 
-        </div>
-        <div class="fa-facebook" id="fa-facebook">
-            <a href="https://www.facebook.com/?locale=pt_BR">
-                <i class="fa-facebook">
-                    <img src="facebook.png">
-                </i>
-            </a>
-        </div>
-        <div class="fa-gmail" id="fa-gmail">
-            <a href="https://accounts.google.com/login">
-                <i class="fa-gmail">
-                    <img src="gmail.png" >
-                </i>
-            </a>
-        </div>
-        <div class="row"><!--Insere uma linha separando os cards-->
-            <div class="linha">
-                <hr class="hr"data-content="OU">
-            </div>
-        </div>
-        <form action="#" accept="viewport" novalidate><!--Tag para armazenar os dados no banco de dados tornando validos-->
-            <div class="nome" id="nome">
-                <span class="material-symbols-outlined">badge</span>
-                <mat-stepper [linear]="linear"><!--Tag mat, sera responsavel por -->
-                    <mat-step [stepControl ]="firstFormGroup">
-                        <form [[formGroupName]="firstFormGroup"]>
-                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]">
-                        </form>
-                    </mat-step>
-                </mat-stepper>
-            </div>
-        </form>
-        <br>
-        <form action="#" accept-charset="" novalidate>
-            <div class="E-mail" id="E-mail">
+        <form action="#" accept-charset="UTF-8" accept-patch="#"> <!--Está tag será responsavel por indicar o tipo de midia o servidor está apto a entender-->
+            <div class="E-mail" id="E-mail"><!--Ao inserir as tags input, dentro da tag possui um check de  validação, verificando se os caracteres estão corretos-->
                 <span class="material-symbols-outlined">mail</span>
-                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="18" checked="email" aria-activedescendant="email">
+                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="33" checked="email" aria-activedescendant="email">
             </div>
-            <br> 
+            <br>
             <div class="senha" id="senha">
-                <label class="control_label" for="psw_senha">
-                    <span class="material-symbols-outlined">lock</span>
-                </label>
-                <input label="false" required="required" class="senha_required" autocomplete="off" aria-required="true" type="password" name="psw[senha]" pattern="[A-Za-z]{9}" placeholder="Digite Sua Senha" min="5" max="9" minlength="[A-Za-z]{5}" maxlength="A-Za-z]{9}" required maxlength="10" aria-activedescendant="senha" checked="password">   
+                <span class="material-symbols-outlined">password</span>
+                <input type="password" class="senha-password" pattern="[A-Za-z]{9}"  [(ngModel)]="senha" placeholder="Digite Sua Senha" required maxlength="19" aria-activedescendant="senha" checked="senha">
             </div>
-            <div class="psw_senha" id="psw_senha_confirmation">
-                <label class="control-label" for="psw_confirmation">
-                    <span class="material-symbols-outlined">lock</span>
+            <br>
+            <section class="cadastro" id="cadastro">
+                <div class="cadastro" id="cadastro">
+                    <a href="#" target="_self" style="text-decoration: none;">CADASTRAR-SE</a>
+                </div>
+            </section>
+            <br>
+            <section class="redefinir-senha" id="senha">
+                <div class="redefinir-senha" id="senha">
+                    <a href="#" target="_self" style="text-decoration: none;">ESQUECI A SENHA!</a>
+                </div>
+            </section>
+            <br>
+            <div class="check" id="check">
+                <input type="checkbox" [routerLink]="['routePath', routeParameterValue]"
+                routerLinkActive="router-link-active">
+                <label class="check-terms" type="check-terms" style="color: white;">
+                    Deseja Salvar Sua Conta
                 </label>
-                <input label="false" required="required" class="senha_required" autocomplete="off" aria-required="true" type="password" name="psw[psw_senha_confirmation]" pattern="[A-Za-z]{9}" placeholder="Digite Sua Senha" min="5" max="9" minlength="[A-Za-z]{5}" maxlength="A-Za-z]{9}" required maxlength="10" aria-activedescendant="senha" checked="password">
+            </div>
+            <br>
+            <div class="btn" id="btn">
+                <button type="btn-envia" id="btn-envia" [(ngSwitch)]="btn-envia" role="button" style="width: 150px !important; cursor: pointer; padding: 9px 46px;">
+                    <div *ngSwitchCase="expression">ENTRAR</div>
+                    <div *ngSwitchDefault></div>
+                </button> 
             </div>
         </form>
-        <br>
-        <div class="Mundo" id="Mundo">
-            <span class="material-symbols-outlined">language</span>
-        </div>
     </fieldset>
 </body>
 </html>
