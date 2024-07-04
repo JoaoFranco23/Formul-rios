@@ -52,7 +52,7 @@
             </div>
         </form>
         <br>
-        <form action="#" accept-charset="" novalidate>
+        <form action="#" accept-charset="UTF-8" novalidate>
             <div class="E-mail" id="E-mail">
                 <span class="material-symbols-outlined">mail</span>
                 <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="18" checked="email" aria-activedescendant="email">
@@ -72,9 +72,16 @@
             </div>
         </form>
         <br>
-        <div class="Mundo" id="Mundo">
-            <span class="material-symbols-outlined">language</span>
-        </div>
+        <form action="#" novalidate>
+            <div class="linguagem" id="linguagem">
+                <span class="material-symbols-outlined">language</span>
+                <select class="pais" required="required" priority="BR" name="pais" id="--Mundo--">
+                    <option value="" selected="">PAIS</option>
+                </select>
+            </div>
+        </form>
     </fieldset>
 </body>
 </html>
+
+<input type="date" autocomplete="off" id="calendario" name="date_nascimento" class="data_nascimento" size="12" mascara="DD/MM/YYYY" maxlength="12" field="date">
