@@ -283,6 +283,17 @@
                 <input type="date" autocomplete="off" id="calendario" name="date_nascimento" class="data_nascimento" size="12" mascara="DD/MM/YYYY" maxlength="12" field="date">
             </div>
         </form>
+        <br>
+        <section class="btn" id="btn_envia"> 
+            <div class="btn_label" id="btn_envia">
+                <button type="button" class="btn_envia" mat-stroked-button [[disabled]]="!form.form.valid">
+                    CADASTRAR
+                    <mat-icon>
+                        <img src="search.png" style="width: 20px !important; display: inline-block;">
+                    </mat-icon>
+                </button> 
+            </div>
+        </section>
     </fieldset>
 </body>
 </html>
