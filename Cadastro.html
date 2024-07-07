@@ -12,7 +12,7 @@
 </head>
 <body>
     <fieldset class="borda" id="borda">
-        <h1 class="fa-toilet-paper">LOGIN</h1>
+        <h1 class="fa-toilet-paper">CADASTRAR-SE</h1>
         <br>
         <div class="fa-linkedin" id="fa-linkedin"><!--Cadastro Atraves das Redes Sociais-->
             <a href="https://www.linkedin.com/login">
@@ -40,7 +40,7 @@
                 <hr class="hr"data-content="OU">
             </div>
         </div>
-        <form action="#" accept="viewport" novalidate><!--Tag para armazenar os dados no banco de dados tornando validos-->
+        <form action="conexao.php" accept="viewport" method="post" novalidate><!--Tag para armazenar os dados no banco de dados tornando validos-->
             <div class="nome" id="nome">
                 <span class="material-symbols-outlined">badge</span>
                 <mat-stepper [linear]="linear"><!--Tag mat, sera responsavel por -->
@@ -51,12 +51,10 @@
                     </mat-step>
                 </mat-stepper>
             </div>
-        </form>
         <br>
-        <form action="#" accept-charset="UTF-8" novalidate>
             <div class="E-mail" id="E-mail">
                 <span class="material-symbols-outlined">mail</span>
-                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="18" checked="email" aria-activedescendant="email">
+                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="40" checked="email" aria-activedescendant="email">
             </div>
             <br> 
             <div class="senha" id="senha">
@@ -72,9 +70,7 @@
                 </label>
                 <input label="false" required="required" class="senha_required" autocomplete="off" aria-required="true" type="password" name="psw[psw_senha_confirmation]" pattern="[A-Za-z]{9}" placeholder="Digite Sua Senha" min="5" max="9" minlength="[A-Za-z]{5}" maxlength="A-Za-z]{9}" required maxlength="10" aria-activedescendant="senha" checked="password">
             </div>
-        </form>
         <br>
-        <form action="#" novalidate>
             <div class="linguagem" id="linguagem">
                 <span class="material-symbols-outlined">language</span>
                 <select class="pais" required="required" priority="BR" name="pais" id="--Mundo--">
@@ -275,14 +271,11 @@
                     <option value="Vanuatu">Vanuatu</option>
                 </select>
             </div>
-        </form>
         <br>
-        <form action="#" novalidate>
-            <div class="Nascimento" id="data_nascimento">
-                <span class="material-symbols-outlined">cake</span>
-                <input type="date" autocomplete="off" id="calendario" name="date_nascimento" class="data_nascimento" size="12" mascara="DD/MM/YYYY" maxlength="12" field="date">
-            </div>
-        </form>
+        <div class="Nascimento" id="data_nascimento">
+            <span class="material-symbols-outlined">cake</span>
+            <input type="date" autocomplete="off" id="calendario" name="date_nascimento" class="data_nascimento" size="12" mascara="DD/MM/YYYY" maxlength="12" field="date">
+        </div>
         <br>
         <section class="btn" id="btn_envia"> 
             <div class="btn_label" id="btn_envia">
@@ -294,6 +287,7 @@
                 </button> 
             </div>
         </section>
+        </form>
     </fieldset>
 </body>
 </html>
