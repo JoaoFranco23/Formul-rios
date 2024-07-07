@@ -13,6 +13,9 @@ body{
     color-interpolation-filters: sRGB ;
     filter: drop-shadow(20px 20px 30px url) (75%);
 }
+.body{
+
+}
 /*Borda centralizada ao meio*/
 .borda{
     display: block;
@@ -36,4 +39,26 @@ body{
 /*alterando a cor do simbolo inserido*/
 .material-symbols-outlined{
     color: white;
+    justify-items: center;
+    height: 1cm;
+} 
+h1{
+    display: flex;
+    justify-content: center;
+    background: rgb(233, 236, 204);
+    border-color: 1px solid orangered;
+    height: 30%;
+    top: 0;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+
+}
+.fa-toilet-paper{
+    background-image: url("Fogueira.gif");
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+    font-size:50px;
+    font-weight: 600;
 }
