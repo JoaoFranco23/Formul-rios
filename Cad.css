@@ -13,9 +13,6 @@ body{
     color-interpolation-filters: sRGB ;
     filter: drop-shadow(20px 20px 30px url) (75%);
 }
-.body{
-
-}
 /*Borda centralizada ao meio*/
 .borda{
     display: block;
@@ -39,8 +36,6 @@ body{
 /*alterando a cor do simbolo inserido*/
 .material-symbols-outlined{
     color: white;
-    justify-items: center;
-    height: 1cm;
 } 
 h1{
     display: flex;
@@ -63,3 +58,25 @@ h1{
     font-weight: 600;
 } 
 /*Card texto*/
+.nome{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nome,
+.nome-full{
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.nome{
+    display: block;
+}
+.nome-full{
+    display: block;
+}
+.nome,
+.nome-full{
+    display: flex;
+}
