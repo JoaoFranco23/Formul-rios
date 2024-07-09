@@ -36,7 +36,9 @@ body{
 /*alterando a cor do simbolo inserido*/
 .material-symbols-outlined{
     color: white;
-    margin-right: 10px;
+    margin-right: 2px;
+    width: -3px;
+    align-items: center;
 } 
 h1{
     display: flex;
@@ -69,7 +71,7 @@ h1{
 .nome-full{
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 190px;
     margin: 0 auto;
 }
 .nome{
@@ -78,8 +80,25 @@ h1{
     margin: 0;
     top: 0;
     z-index: 0;
-    line-height: -1.2cm;
     justify-content: center;
     text-align: left;
     right: -18%;
+} 
+.E-mail,
+.material-symbols-outlined{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.E-mail,
+.email{
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    margin: 0 auto;
+} 
+.E-mail{
+    display: flex;
+    
 }
