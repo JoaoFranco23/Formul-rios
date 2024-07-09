@@ -47,7 +47,7 @@
                 <mat-stepper [linear]="linear"><!--Tag mat, sera responsavel por -->
                     <mat-step [stepControl ]="firstFormGroup">
                         <form [[formGroupName]="firstFormGroup"]>
-                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]">
+                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]" style="width: 180px !important;">
                         </form>
                     </mat-step>
                 </mat-stepper>
