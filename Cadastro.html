@@ -47,7 +47,7 @@
                 <mat-stepper [linear]="linear"><!--Tag mat, sera responsavel por -->
                     <mat-step [stepControl ]="firstFormGroup">
                         <form [[formGroupName]="firstFormGroup"]>
-                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]" style="width: 180px !important;">
+                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]" style="width: 170px !important;">
                         </form>
                     </mat-step>
                 </mat-stepper>
@@ -55,7 +55,7 @@
         <br>
             <div class="E-mail" id="E-mail">
                 <span class="material-symbols-outlined">mail</span>
-                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="40" checked="email" aria-activedescendant="email">
+                <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="40" checked="email" aria-activedescendant="email" style="width: 170px !important;">
             </div>
             <br> 
             <div class="senha" id="senha">
