@@ -98,7 +98,19 @@ h1{
     max-width: 190px;
     margin: 0 auto;
 } 
+
 .E-mail{
     display: flex;
-    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: -43px;
+    text-align: left;
+    right: -20%;
+}
+.senha,
+.material-symbols-outlined{
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
