@@ -128,6 +128,33 @@ h1{
 .psw_senha{
     display: flex;
     justify-content: center;
-    position: relative; 
+    position: relative;
     align-items: center;
+    top: -43px;
+    margin-top: -49px;
+    text-align: left;
+    right: -20%;
+}
+
+.linguagem,
+.material-symbols-outlined{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.linguagem,
+.pais{
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+.linguagem{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: -43px;
+    text-align: left;
+    left: -110px !important;
 }
