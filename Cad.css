@@ -101,16 +101,33 @@ h1{
 
 .E-mail{
     display: flex;
-    position: relative;
-    justify-content: center;
+    position: relative;         /*Multi-coluna*/
+    justify-content: center; 
     align-items: center;
     top: -43px;
     text-align: left;
     right: -20%;
 }
-.senha,
-.material-symbols-outlined{
-    align-items: center;
+
+.senha{
+    display: flex;
     justify-content: center;
     position: relative;
+    top: -50px;
+    line-height: 1.12cm; 
+    text-align: left;
+    right: 16%;
+}
+.psw_senha,
+.psw_required{
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    margin: 0 auto;
+}
+.psw_senha{
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    align-items: center;
 }
