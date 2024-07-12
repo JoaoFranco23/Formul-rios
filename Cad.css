@@ -157,4 +157,20 @@ h1{
     margin-top: -43px;
     text-align: left;
     left: -110px !important;
+} 
+.linguagem{
+    display: flex;
+    width: 200px !important;
+}
+
+.linguagem select{
+    width: 100%;
+    padding: 1px;
+    font-size: 12px; /* Adjust font size for select */
+    height: auto;
+    box-sizing: border-box;
+}
+.linguagem option{
+    padding: 10px;
+    font-size: 16px;
 }
