@@ -146,7 +146,7 @@ h1{
 .pais{
     display: block;
     width: 100%;
-    max-width: 195px !important;
+    max-width: 190px !important;
     justify-content: center;
     margin: 0 auto;
 }
