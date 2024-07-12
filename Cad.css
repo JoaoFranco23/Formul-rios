@@ -146,7 +146,8 @@ h1{
 .pais{
     display: block;
     width: 100%;
-    max-width: 100px;
+    max-width: 195px !important;
+    justify-content: center;
     margin: 0 auto;
 }
 .linguagem{
@@ -154,23 +155,14 @@ h1{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: -43px;
-    text-align: left;
-    left: -110px !important;
+    margin-top: -50px;
+    text-align: right;
+    left: -98px !important;
 } 
-.linguagem{
-    display: flex;
-    width: 200px !important;
-}
-
 .linguagem select{
     width: 100%;
-    padding: 1px;
-    font-size: 12px; /* Adjust font size for select */
+    padding: 3px;
+    font-size: 16px;
     height: auto;
     box-sizing: border-box;
-}
-.linguagem option{
-    padding: 10px;
-    font-size: 16px;
 }
