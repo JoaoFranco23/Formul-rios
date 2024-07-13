@@ -71,14 +71,15 @@ h1{
 .nome-full{
     display: block;
     width: 100%;
-    max-width: 190px;
+    padding: 3px;
+    max-width: 170px;
     margin: 0 auto;
 }
 .nome{
     display: flex;
     position: relative;
     margin: 0;
-    top: 0;
+    top: 6px;
     z-index: 0;
     justify-content: center;
     text-align: left;
@@ -95,7 +96,8 @@ h1{
 .email{
     display: block;
     width: 100%;
-    max-width: 190px;
+    padding: 3px;
+    max-width: 170px;
     margin: 0 auto;
 } 
 
@@ -122,6 +124,7 @@ h1{
 .psw_required{
     display: block;
     width: 100%;
+    padding: 3px;
     max-width: 190px;
     margin: 0 auto;
 }
@@ -146,6 +149,7 @@ h1{
 .pais{
     display: block;
     width: 100%;
+    padding: 3px;
     max-width: 190px !important;
     justify-content: center;
     margin: 0 auto;
@@ -166,3 +170,20 @@ h1{
     height: auto;
     box-sizing: border-box;
 }
+.Nascimento, 
+.data_nascimento{
+    display: block;
+    width: 100%;
+    padding: 3px;
+    max-width: 190px;
+    margin: 0 auto;
+}
+.Nascimento{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: -53px;
+    right: -120px;
+}
+
