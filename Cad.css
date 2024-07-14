@@ -186,3 +186,26 @@ h1{
     top: -53px;
     right: -111px;
 }
+.btn,
+.btn_label,
+.btn_envia{
+    display: block;
+    width: 100%;
+    padding: 3px;
+    max-width: 190px !important;
+    justify-content: center;
+    margin: 0 auto;
+}
+.btn_envia{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.btn_label{
+    display: block;
+    top: -20px;
+    position: relative;
+    justify-content: center;
+
+}
