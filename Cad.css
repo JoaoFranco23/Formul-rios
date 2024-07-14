@@ -136,7 +136,7 @@ h1{
     top: -43px;
     margin-top: -49px;
     text-align: left;
-    right: -20%;
+    right: -119px;
 }
 
 .linguagem,
@@ -161,7 +161,7 @@ h1{
     align-items: center;
     margin-top: -50px;
     text-align: right;
-    left: -110px !important;
+    left: -113px !important;
 } 
 .linguagem select{
     width: 100%;
@@ -208,3 +208,6 @@ h1{
     position: relative;
     justify-content: center;
 }
+/*-------------------------------------------------------------------------------*/
+                                /*Rede Social*/
+
