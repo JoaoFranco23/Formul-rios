@@ -47,12 +47,12 @@
                 <mat-stepper [linear]="linear"><!--Tag mat, sera responsavel por -->
                     <mat-step [stepControl ]="firstFormGroup">
                         <form [[formGroupName]="firstFormGroup"]>
-                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]" style="width: 170px !important;">
+                            <input type="name" formArrayName="novalidate" name="nome" class="nome-full" [formGroupName]="nome-full" placeholder="Digite Seu nome Completo" pattern="[A-Za-z]" style="width: 160px !important;">
                         </form>
                     </mat-step>
                 </mat-stepper>
             </div>
-        <br>
+            <br>
             <div class="E-mail" id="E-mail">
                 <span class="material-symbols-outlined">mail</span>
                 <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="40" checked="email" aria-activedescendant="email" style="width: 170px !important;">
@@ -60,14 +60,14 @@
             <br> 
             <div class="senha" id="senha">
                 <span class="material-symbols-outlined">lock</span>
-                <input label="false" required="required" class="senha_required" autocomplete="off" aria-required="true" type="password" name="psw[senha]" pattern="[A-Za-z]{9}" placeholder="Digite Sua Senha" min="5" max="9" minlength="[A-Za-z]{5}" maxlength="A-Za-z]{9}" required maxlength="10" aria-activedescendant="senha" checked="password" style="width: 170px !important;">   
+                <input label="false" required="required" class="senha_required" autocomplete="off" aria-required="true" type="password" name="psw[senha]" pattern="[A-Za-z]{9}" placeholder="Digite Sua Senha" min="5" max="9" minlength="[A-Za-z]{5}" maxlength="A-Za-z]{9}" required maxlength="10" aria-activedescendant="senha" checked="password" style="width: 167px !important;">   
             </div>
             <br>
             <div class="psw_senha" id="psw_senha_confirmation">
                 <span class="material-symbols-outlined">lock</span>
                 <input label="false" required="required" class="psw_required" autocomplete="off" aria-required="true" type="password" name="psw[psw_senha_confirmation]" pattern="[A-Za-z]{9}" placeholder="Digite Sua Senha" min="5" max="9" minlength="[A-Za-z]{5}" maxlength="A-Za-z]{9}" required maxlength="10" aria-activedescendant="senha" checked="password" style="width: 170px !important;">
             </div>
-        <br>
+            <br>
             <div class="linguagem" id="linguagem">
                 <span class="material-symbols-outlined">language</span>
                 <select class="pais" required="required" priority="BR" name="pais" id="--Mundo--">
